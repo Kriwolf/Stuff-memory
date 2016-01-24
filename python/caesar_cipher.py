@@ -4,16 +4,16 @@
 '''
 
 def password_enc():
-	name = raw_input("Password: ")
-	new_name = ""
+	passw = raw_input("Password: ")
+	new_passw = ""
 	x = 0
-	for i in name:
+	for i in passw:
 		o = ord(i) + x
 		x += 1
 		new_char = chr(o)
-		new_name += new_char
+		new_passw += new_char
 
-	return new_name
+	return new_passw
 
 if __name__ == "__main__":
 	print(password_enc())
